@@ -1,0 +1,33 @@
+.header {
+    background: linear-gradient(90deg, #FEDD2C 0%, #F9C201 100%);
+    padding: 16px 0;
+}
+
+.header__wrapper {
+    display: grid;
+    grid-template-columns: 137px 1fr 188px;
+    gap: 10px;
+    align-items: center;
+}
+
+.header__logo-link {
+    display: flex;
+}
+
+.header__contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.header__tel {
+    font-weight: 600;
+    font-size: 18px;
+    color: #555555;
+}
+
+.header__accepting-orders {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
