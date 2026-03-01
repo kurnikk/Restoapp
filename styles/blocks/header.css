@@ -4,8 +4,8 @@
 }
 
 .header__wrapper {
-    display: grid;
-    grid-template-columns: 137px 1fr 188px;
+    display: flex;
+    justify-content: space-between;
     gap: 10px;
     align-items: center;
 }

@@ -15,6 +15,7 @@
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     gap: 32px;
 }
 
@@ -22,12 +23,38 @@
     border-radius: 16px;
     overflow: hidden;
     position: relative;
+    min-width: 304px;
+    min-height: 304px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 16px;
+    display: flex;
+    align-items: flex-end;
+    aspect-ratio: 1 / 1;
+}
+
+.menu__card--pizza {
+    background-image: url(./../../images/menu-card-pizza.jpg);
+}
+
+.menu__card--soup {
+    background-image: url(./../../images/menu-card-soup.jpg);
+}
+
+.menu__card--hot-dishes {
+    background-image: url(./../../images/menu-card-hot-dishes.jpg);
+}
+
+.menu__card--salad {
+    background-image: url(./../../images/menu-card-salad.jpg);
 }
 
 .menu__card::after {
     content: "";
     position: absolute;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
@@ -39,8 +66,5 @@
     font-size: 24px;
     line-height: 32px;
     color: #ffffff;
-    position: absolute;
-    left: 16px;
-    bottom: 16px;
     z-index: 1;
 }

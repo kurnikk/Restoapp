@@ -1,6 +1,7 @@
 /* Global */
 /* ------------------------------------ */
 
+@import "globals/normalize.css";
 @import "globals/fonts.css";
 @import "globals/reboot.css";
 @import "globals/container.css";
