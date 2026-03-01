@@ -10,35 +10,59 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
-                <a class="header__logo-link" href="#">
-                    <svg class="header__logo" width="137" height="22" aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#icon-header-logo"></use>
-                    </svg>
-                </a>
-                <nav class="main-nav">
-                    <ul class="main-nav__list">
-                        <li class="main-nav__item">
-                            <a class="main-nav__link" href="#">Меню</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a class="main-nav__link" href="#">Акции</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a class="main-nav__link" href="#">О нас</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a class="main-nav__link" href="#">События</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a class="main-nav__link" href="#">Зоны доставки</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="header__contact-info">
-                    <a class="header__tel" href="tel:+01234567890">+0 (123) 456 78-90</a>
-                    <span class="header__accepting-orders">Прием заказов с 10:00 до 22:40</span>
+        <div class="header__top">
+            <span class="header__top-text">Бесплатная доставка от 1 000 ₽</span>
+            <button class="header__top-btn btn">
+                <svg class="header__top-icon" width="24" height="24" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="header__wrapper">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="header__logo-link" href="#">
+                        <svg class="header__logo" width="137" height="22" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#icon-header-logo"></use>
+                        </svg>
+                    </a>
+                    <nav class="main-nav">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#">Меню</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#">Акции</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#">О нас</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#">События</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#">Зоны доставки</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__contacts">
+                        <div class="header__contacts-info">
+                            <a class="header__tel" href="tel:+01234567890">+0 (123) 456 78-90</a>
+                            <span class="header__accepting-orders">Прием заказов с 10:00 до 22:40</span>
+                        </div>
+                        <div class="header__action">
+                            <button class="header__action-btn btn">
+                                <svg class="header__action-icon" width="24" height="24" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#icon-user"></use>
+                                </svg>
+                            </button>
+                            <button class="header__action-btn btn  header__action-btn--basket">
+                                <svg class="header__action-icon" width="24" height="24" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#icon-basket"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -47,38 +71,215 @@
         <section class="menu">
             <div class="container">
                 <div class="menu__wrapper">
-                    <h1 class="menu__title">Меню</h1>
+                    <h2 class="menu__title">Меню</h2>
                     <ul class="menu__list">
                         <li class="menu__item">
                             <a class="menu__link" href="#">
                                 <div class="menu__card menu__card--pizza">
-                                    <h2 class="menu__card-title">Пицца</h2>
+                                    <h3 class="menu__card-title">Пицца</h3>
                                 </div>
                             </a>
                         </li>
                         <li class="menu__item">
                             <a class="menu__link" href="#">
                                 <div class="menu__card menu__card--soup">
-                                    <h2 class="menu__card-title">Супы</h2>
+                                    <h3 class="menu__card-title">Супы</h3>
                                 </div>
                             </a>
                         </li>
                         <li class="menu__item">
                             <a class="menu__link" href="#">
                                 <div class="menu__card menu__card--hot-dishes">
-                                    <h2 class="menu__card-title">Горячие блюда</h2>
+                                    <h3 class="menu__card-title">Горячие блюда</h3>
                                 </div>
                             </a>
                         </li>
                         <li class="menu__item">
                             <a class="menu__link" href="#">
                                 <div class="menu__card menu__card--salad">
-                                    <h2 class="menu__card-title">Салаты</h2>
+                                    <h3 class="menu__card-title">Салаты</h3>
                                 </div>
                             </a>
                         </li>
                     </ul>
                 </div>
+            </div>
+        </section>
+        <section class="novelty">
+            <div class="container">
+                <h2 class="novelty__title">Новинки</h2>
+                <ul class="products">
+                    <li class="products__item">
+                        <a class="products__link" href="#">
+                            <article class="products__card">
+                                <div class="products__inner">
+                                    <img class="products__image" src="./images/chinese-soup.jpg"
+                                        alt="Китайский яичный суп" width="512" height="512">
+                                    <div class="products__icons">
+                                        <svg class="products__icon" width="36" height="36" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#icon-vegetarian"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="products__info">
+                                    <h3 class="products__title">Китайский яичный суп</h3>
+                                    <p class="products__description">Традиционный китайский суп с&nbsp;яйцом
+                                        и&nbsp;томатами черри</p>
+                                </div>
+                            </article>
+                        </a>
+                        <button class="product__btn btn">350 ₽</button>
+                    </li>
+                    <li class="products__item">
+                        <a class="products__link" href="#">
+                            <article class="products__card">
+                                <div class="products__inner">
+                                    <img class="products__image" src="./images/paella.jpg" alt="Китайский яичный суп"
+                                        width="512" height="512">
+                                    <div class="products__icons">
+                                        <svg class="products__icon" width="36" height="36" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#icon-vegetarian"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="products__info">
+                                    <h3 class="products__title">Паэлья</h3>
+                                    <p class="products__description">Традиционное испанское блюдо&nbsp;&mdash; рис,
+                                        колбаски чоризо, куриное бедро, кальмар, кукуруза, горошек, специи</p>
+                                </div>
+                            </article>
+                        </a>
+                        <button class="product__btn btn">660 ₽</button>
+                    </li>
+                    <li class="products__item">
+                        <a class="products__link" href="#">
+                            <article class="products__card">
+                                <div class="products__inner">
+                                    <img class="products__image" src="./images/boeuf-bourguignon.jpg"
+                                        alt="Китайский яичный суп" width="512" height="512">
+                                    <div class="products__icons"></div>
+                                </div>
+                                <div class="products__info">
+                                    <h3 class="products__title">Биф Бургеньон</h3>
+                                    <p class="products__description">Блюдо французской кухни&nbsp;&mdash; тушёные
+                                        кусочки говядины с&nbsp;картофелем и&nbsp;болгарским перцем</p>
+                                </div>
+                            </article>
+                        </a>
+                        <button class="product__btn btn">630 ₽</button>
+                    </li>
+                    <li class="products__item">
+                        <a class="products__link" href="#">
+                            <article class="products__card">
+                                <div class="products__inner">
+                                    <img class="products__image" src="./images/broken-cucumbers.jpg"
+                                        alt="Китайский яичный суп" width="512" height="512">
+                                    <div class="products__icons">
+                                        <svg class="products__icon" width="36" height="36" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#icon-vegetarian"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="products__info">
+                                    <h3 class="products__title">Битые огурцы</h3>
+                                    <p class="products__description">Салат из&nbsp;свежих битых огурцов с&nbsp;уйгурским
+                                        соусом, кешью и&nbsp;кунжутом</p>
+                                </div>
+                            </article>
+                        </a>
+                        <button class="product__btn btn">320 ₽</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="popular">
+            <div class="container">
+                <h2 class="popular__title">Популярное</h2>
+                <ul class="products">
+                    <li class="products__item">
+                        <a class="products__link" href="#">
+                            <article class="products__card">
+                                <div class="products__inner">
+                                    <img class="products__image" src="./images/pepperoni.jpg" alt="Китайский яичный суп"
+                                        width="512" height="512">
+                                    <div class="products__icons"></div>
+                                </div>
+                                <div class="products__info">
+                                    <h3 class="products__title">Пепперони</h3>
+                                    <p class="products__description">Просто и&nbsp;вкусно&nbsp;&mdash; томатная основа
+                                        маринара, колбаски пепперони и&nbsp;сыр моцарелла</p>
+                                </div>
+                            </article>
+                        </a>
+                        <button class="product__btn btn">660 ₽</button>
+                    </li>
+                    <li class="products__item">
+                        <a class="products__link" href="#">
+                            <article class="products__card">
+                                <div class="products__inner">
+                                    <img class="products__image" src="./images/pear-gorgonzola.jpg"
+                                        alt="Китайский яичный суп" width="512" height="512">
+                                    <div class="products__icons">
+                                        <svg class="products__icon" width="36" height="36" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#icon-vegetarian"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="products__info">
+                                    <h3 class="products__title">Груша Горгонзола</h3>
+                                    <p class="products__description">Нежная пицца на&nbsp;основе сливочного соуса
+                                        с&nbsp;сыром горгондзола, грушей, медом и&nbsp;кедровыми орехами</p>
+                                </div>
+                            </article>
+                        </a>
+                        <button class="product__btn btn">780 ₽</button>
+                    </li>
+                    <li class="products__item">
+                        <a class="products__link" href="#">
+                            <article class="products__card">
+                                <div class="products__inner">
+                                    <img class="products__image" src="./images/pho-bo.jpg" alt="Китайский яичный суп"
+                                        width="512" height="512">
+                                    <div class="products__icons"></div>
+                                </div>
+                                <div class="products__info">
+                                    <h3 class="products__title">Фо Бо</h3>
+                                    <p class="products__description">Вьетнамский суп с&nbsp;рисовой лапшой,
+                                        в&nbsp;котором используется говядина, свежая зелень и&nbsp;ростки сои. Подают
+                                        с&nbsp;добавками, такими как мята, долька лайма, острый соус шрирача, азиатский
+                                        уксус и&nbsp;лаоганма</p>
+                                </div>
+                            </article>
+                        </a>
+                        <button class="product__btn btn">490 ₽</button>
+                    </li>
+                    <li class="products__item">
+                        <a class="products__link" href="#">
+                            <article class="products__card">
+                                <div class="products__inner">
+                                    <img class="products__image" src="./images/tom-yum.jpg" alt="Китайский яичный суп"
+                                        width="512" height="512">
+                                    <div class="products__icons">
+                                        <svg class="products__icon" width="36" height="36" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#icon-sharp"></use>
+                                        </svg>
+                                        <svg class="products__icon" width="36" height="36" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#icon-seafood"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="products__info">
+                                    <h3 class="products__title">Том Ям с морепродуктами</h3>
+                                    <p class="products__description">Традиционный тайский суп, на&nbsp;основе кокосового
+                                        молока и&nbsp;сливок, с&nbsp;добавлением креветок, кальмаров, грибов шиитаке
+                                        и&nbsp;шампиньонов, помидоров черри и&nbsp;свежей зелени. Подается
+                                        с&nbsp;паровым тайским рисом</p>
+                                </div>
+                            </article>
+                        </a>
+                        <button class="product__btn btn">590 ₽</button>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>

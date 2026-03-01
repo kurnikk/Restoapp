@@ -35,19 +35,19 @@
 }
 
 .menu__card--pizza {
-    background-image: url(./../../images/menu-card-pizza.jpg);
+    background-image: url(./../../images/pizza.jpg);
 }
 
 .menu__card--soup {
-    background-image: url(./../../images/menu-card-soup.jpg);
+    background-image: url(./../../images/pho-bo.jpg);
 }
 
 .menu__card--hot-dishes {
-    background-image: url(./../../images/menu-card-hot-dishes.jpg);
+    background-image: url(./../../images/hot-dishes.jpg);
 }
 
 .menu__card--salad {
-    background-image: url(./../../images/menu-card-salad.jpg);
+    background-image: url(./../../images/salad.jpg);
 }
 
 .menu__card::after {

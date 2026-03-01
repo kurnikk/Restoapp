@@ -9,6 +9,10 @@
 /* Blocks */
 /* ------------------------------------ */
 
+@import "blocks/btn.css";
 @import "blocks/header.css";
 @import "blocks/main-nav.css";
 @import "blocks/menu.css";
+@import "blocks/novelty.css";
+@import "blocks/products.css";
+@import "blocks/popular.css";
