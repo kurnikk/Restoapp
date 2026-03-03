@@ -5,6 +5,7 @@
 @import "globals/fonts.css";
 @import "globals/reboot.css";
 @import "globals/container.css";
+@import "globals/visually-hidden.css";
 
 /* Blocks */
 /* ------------------------------------ */
