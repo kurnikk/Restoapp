@@ -1,0 +1,13 @@
+.stock__wrapper {
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.stock__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1c1c1c;
+}

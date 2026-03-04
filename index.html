@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resto App</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <!-- У двоих проверяющих почему то не заработали стили, пишите как исправили путь, 
+    чтобы я понимала, потому что даже gpt говорит что все окей -->
 </head>
 
 <body>
     <header class="header">
         <div class="header__top">
+            <!-- Я знаю что по pixelPerfect почему то к концу текст не сходится и не только в этом месте, 
+                если в багах укажете, то объясните как фиксить, я не понимаю -->
             <span class="header__top-text">Бесплатная доставка от 1 000 ₽</span>
             <button class="header__top-btn btn">
                 <svg class="header__top-icon" width="24" height="24" aria-hidden="true">
@@ -281,6 +285,140 @@
                         <button class="product__btn btn">590 ₽</button>
                     </li>
                 </ul>
+            </div>
+        </section>
+        <section class="stock">
+            <div class="container">
+                <div class="stock__wrapper">
+                    <h2 class="stock__title">Акции</h2>
+                    <ul class="cards">
+                        <li class="cards__item">
+                            <a class="cards__link" href="#">
+                                <article class="cards__content">
+                                    <img class="cards__image" src="./images/platina.jpg" alt="статус Platina"
+                                        width="1600" height="2106">
+                                    <div class="cards__badges">
+                                        <div class="cards__badges-left">
+                                            <span class="cards__badge">Скидка 10%</span>
+                                        </div>
+                                    </div>
+                                    <div class="cards__name">
+                                        <h3 class="cards__title">Статус &laquo;Platina&raquo; привилегированным клиентам
+                                        </h3>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li class="cards__item">
+                            <a class="cards__link" href="#">
+                                <article class="cards__content">
+                                    <img class="cards__image" src="./images/discount.jpg" alt="discount 5%" width="1600"
+                                        height="1064">
+                                    <div class="cards__badges">
+                                        <div class="cards__badges-left">
+                                            <span class="cards__badge">Скидка 5%</span>
+                                        </div>
+                                    </div>
+                                    <div class="cards__name">
+                                        <h3 class="cards__title">Скидка на&nbsp;все покупки</h3>
+                                        <h3 class="cards__title">при регистрации</h3>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="events">
+            <div class="container">
+                <div class="events__wrapper">
+                    <h2 class="events__title">События</h2>
+                    <ul class="cards">
+                        <li class="cards__item">
+                            <a class="cards__link" href="#">
+                                <article class="cards__content">
+                                    <img class="cards__image" src="./images/stand-up.jpg" alt="stand up" width="1600"
+                                        height="1064">
+                                    <div class="cards__badges">
+                                        <div class="cards__badges-left">
+                                            <span class="cards__badge">27 января</span>
+                                            <span class="cards__badge">В 21:00</span>
+                                        </div>
+                                        <span class="cards__badge cards__badge--yellow">Скоро</span>
+                                    </div>
+                                    <div class="cards__name">
+                                        <h3 class="cards__title">Первый в&nbsp;этом году Stand-Up</h3>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li class="cards__item">
+                            <a class="cards__link" href="#">
+                                <article class="cards__content">
+                                    <img class="cards__image" src="./images/gastro-shop.jpg" alt="gastro shop"
+                                        width="1600" height="1064">
+                                    <div class="cards__badges">
+                                        <div class="cards__badges-left">
+                                            <span class="cards__badge">21 января</span>
+                                            <span class="cards__badge">Скидка 20%</span>
+                                        </div>
+                                        <span class="cards__badge cards__badge--grey">Завершено</span>
+                                    </div>
+                                    <div class="cards__name">
+                                        <h3 class="cards__title">День рождения в&nbsp;&laquo;Гастроцех&raquo;</h3>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="events__btn btn">Все события</button>
+                </div>
+            </div>
+        </section>
+        <section class="about-us">
+            <div class="container">
+                <div class="about-us__wrapper">
+                    <h2 class="about-us__title">Наши заведения</h2>
+                    <ul class="cards">
+                        <li class="cards__item">
+                            <a class="cards__link" href="#">
+                                <article class="cards__content">
+                                    <img class="cards__image" src="./images/food-court.jpg" alt="food court" width="1600"
+                                        height="897">
+                                    <div class="cards__badges">
+                                        <div class="cards__badges-left">
+                                            <span class="cards__badge">Открыт еще 1 ч 20 мин</span>
+                                            <span class="cards__badge">с 10:00 до 23:00</span>
+                                        </div>
+                                        <span class="cards__badge cards__badge--yellow">Открыт</span>
+                                    </div>
+                                    <div class="cards__name">
+                                        <h3 class="cards__title">Фудкорт&nbsp;&mdash; Кафе &laquo;Гастроцех&raquo;</h3>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li class="cards__item">
+                            <a class="cards__link" href="#">
+                                <article class="cards__content">
+                                    <img class="cards__image" src="./images/gastro-shop-pizza.jpg" alt="gastro shop pizza"
+                                        width="1600" height="900">
+                                    <div class="cards__badges">
+                                        <div class="cards__badges-left">
+                                            <span class="cards__badge">Открыт еще 1 ч 20 мин</span>
+                                            <span class="cards__badge">с 10:00 до 23:00</span>
+                                        </div>
+                                        <span class="cards__badge cards__badge--yellow">Открыт</span>
+                                    </div>
+                                    <div class="cards__name">
+                                        <h3 class="cards__title">&laquo;Гастроцех&raquo; Пицца</h3>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
