@@ -1,5 +1,5 @@
 .about-us__wrapper {
-    padding: 37px 0;
+    padding: 37px 0 64px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -10,4 +10,5 @@
     font-size: 40px;
     line-height: 48px;
     color: #1c1c1c;
+    letter-spacing: 0.01em;
 }

@@ -6,66 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resto App</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <!-- У двоих проверяющих почему то не заработали стили, пишите как исправили путь, 
-    чтобы я понимала, потому что даже gpt говорит что все окей -->
 </head>
 
 <body>
     <header class="header">
         <div class="header__top">
-            <!-- Я знаю что по pixelPerfect почему то к концу текст не сходится и не только в этом месте, 
-                если в багах укажете, то объясните как фиксить, я не понимаю -->
             <span class="header__top-text">Бесплатная доставка от 1 000 ₽</span>
-            <button class="header__top-btn btn">
+            <button class="header__top-btn btn" type="button" aria-label="Закрыть">
                 <svg class="header__top-icon" width="24" height="24" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-close"></use>
                 </svg>
             </button>
         </div>
         <div class="header__wrapper">
-            <div class="container">
-                <div class="header__inner">
-                    <a class="header__logo-link" href="#">
-                        <svg class="header__logo" width="137" height="22" aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#icon-header-logo"></use>
-                        </svg>
-                    </a>
-                    <nav class="main-nav">
-                        <ul class="main-nav__list">
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#">Меню</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#">Акции</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#">О нас</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#">События</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="#">Зоны доставки</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="header__contacts">
-                        <div class="header__contacts-info">
-                            <a class="header__tel" href="tel:+01234567890">+0 (123) 456 78-90</a>
-                            <span class="header__accepting-orders">Прием заказов с 10:00 до 22:40</span>
-                        </div>
-                        <div class="header__action">
-                            <button class="header__action-btn btn">
-                                <svg class="header__action-icon" width="24" height="24" aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#icon-user"></use>
-                                </svg>
-                            </button>
-                            <button class="header__action-btn btn  header__action-btn--basket">
-                                <svg class="header__action-icon" width="24" height="24" aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#icon-basket"></use>
-                                </svg>
-                            </button>
-                        </div>
+            <div class="header__inner">
+                <a class="header__logo-link" href="#">
+                    <svg class="header__logo" width="137" height="22" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-header-logo"></use>
+                    </svg>
+                </a>
+                <nav class="main-nav">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#">Меню</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#">Акции</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#">О нас</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#">События</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#">Зоны доставки</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__contacts">
+                    <div class="header__contacts-info">
+                        <a class="header__tel" href="tel:+01234567890">+0 (123) 456 78-90</a>
+                        <span class="header__accepting-orders">Прием заказов с <time datetime="10:00">10:00</time> до <time
+                                datetime="22:40">22:40</time></span>
+                    </div>
+                    <div class="header__action">
+                        <button class="header__action-btn btn" type="button" aria-label="Открыть личный кабинет">
+                            <svg class="header__action-icon" width="24" height="24" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-user"></use>
+                            </svg>
+                        </button>
+                        <button class="header__action-btn btn  header__action-btn--basket" type="button"
+                            aria-label="Открыть корзину">
+                            <svg class="header__action-icon" width="24" height="24" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-basket"></use>
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -80,28 +76,36 @@
                     <ul class="menu__list">
                         <li class="menu__item">
                             <a class="menu__link" href="#">
-                                <div class="menu__card menu__card--pizza">
+                                <div class="menu__card">
+                                    <img class="menu__card-image" src="./images/menu/pizza.webp" alt="Пицца" width="304"
+                                        height="304">
                                     <h3 class="menu__card-title">Пицца</h3>
                                 </div>
                             </a>
                         </li>
                         <li class="menu__item">
                             <a class="menu__link" href="#">
-                                <div class="menu__card menu__card--soup">
+                                <div class="menu__card">
+                                    <img class="menu__card-image" src="./images/menu/pho-bo.webp" alt="Супы" width="304"
+                                        height="304">
                                     <h3 class="menu__card-title">Супы</h3>
                                 </div>
                             </a>
                         </li>
                         <li class="menu__item">
                             <a class="menu__link" href="#">
-                                <div class="menu__card menu__card--hot-dishes">
+                                <div class="menu__card">
+                                    <img class="menu__card-image" src="./images/menu/hot-dishes.webp" alt="Горячие блюда" width="304"
+                                        height="304">
                                     <h3 class="menu__card-title">Горячие блюда</h3>
                                 </div>
                             </a>
                         </li>
                         <li class="menu__item">
                             <a class="menu__link" href="#">
-                                <div class="menu__card menu__card--salad">
+                                <div class="menu__card">
+                                    <img class="menu__card-image" src="./images/menu/salad.webp" alt="Салаты" width="304"
+                                        height="304">
                                     <h3 class="menu__card-title">Салаты</h3>
                                 </div>
                             </a>
@@ -118,7 +122,7 @@
                         <a class="products__link" href="#">
                             <article class="products__card">
                                 <div class="products__inner">
-                                    <img class="products__image" src="./images/chinese-soup.jpg"
+                                    <img class="products__image" src="./images/novelty/chinese-soup.webp"
                                         alt="Китайский яичный суп" width="512" height="512">
                                     <div class="products__icons">
                                         <svg class="products__icon" width="36" height="36" aria-hidden="true">
@@ -133,14 +137,14 @@
                                 </div>
                             </article>
                         </a>
-                        <button class="product__btn btn">350 ₽</button>
+                        <button class="products__btn btn" type="button">350 ₽</button>
                     </li>
                     <li class="products__item">
                         <a class="products__link" href="#">
                             <article class="products__card">
                                 <div class="products__inner">
-                                    <img class="products__image" src="./images/paella.jpg" alt="Китайский яичный суп"
-                                        width="512" height="512">
+                                    <img class="products__image" src="./images/novelty/paella.webp" alt="Паэлья" width="512"
+                                        height="512">
                                     <div class="products__icons">
                                         <svg class="products__icon" width="36" height="36" aria-hidden="true">
                                             <use xlink:href="images/sprite.svg#icon-vegetarian"></use>
@@ -154,14 +158,14 @@
                                 </div>
                             </article>
                         </a>
-                        <button class="product__btn btn">660 ₽</button>
+                        <button class="products__btn btn" type="button">660 ₽</button>
                     </li>
                     <li class="products__item">
                         <a class="products__link" href="#">
                             <article class="products__card">
                                 <div class="products__inner">
-                                    <img class="products__image" src="./images/boeuf-bourguignon.jpg"
-                                        alt="Китайский яичный суп" width="512" height="512">
+                                    <img class="products__image" src="./images/novelty/boeuf-bourguignon.webp"
+                                        alt="Биф Бургеньон" width="512" height="512">
                                     <div class="products__icons"></div>
                                 </div>
                                 <div class="products__info">
@@ -171,14 +175,14 @@
                                 </div>
                             </article>
                         </a>
-                        <button class="product__btn btn">630 ₽</button>
+                        <button class="products__btn btn" type="button">630 ₽</button>
                     </li>
                     <li class="products__item">
                         <a class="products__link" href="#">
                             <article class="products__card">
                                 <div class="products__inner">
-                                    <img class="products__image" src="./images/broken-cucumbers.jpg"
-                                        alt="Китайский яичный суп" width="512" height="512">
+                                    <img class="products__image" src="./images/novelty/broken-cucumbers.webp" alt="Битые огурцы"
+                                        width="512" height="512">
                                     <div class="products__icons">
                                         <svg class="products__icon" width="36" height="36" aria-hidden="true">
                                             <use xlink:href="images/sprite.svg#icon-vegetarian"></use>
@@ -192,7 +196,7 @@
                                 </div>
                             </article>
                         </a>
-                        <button class="product__btn btn">320 ₽</button>
+                        <button class="products__btn btn" type="button">320 ₽</button>
                     </li>
                 </ul>
             </div>
@@ -205,7 +209,7 @@
                         <a class="products__link" href="#">
                             <article class="products__card">
                                 <div class="products__inner">
-                                    <img class="products__image" src="./images/pepperoni.jpg" alt="Китайский яичный суп"
+                                    <img class="products__image" src="./images/popular/pepperoni.webp" alt="Пепперони"
                                         width="512" height="512">
                                     <div class="products__icons"></div>
                                 </div>
@@ -216,14 +220,14 @@
                                 </div>
                             </article>
                         </a>
-                        <button class="product__btn btn">660 ₽</button>
+                        <button class="products__btn btn" type="button">660 ₽</button>
                     </li>
                     <li class="products__item">
                         <a class="products__link" href="#">
                             <article class="products__card">
                                 <div class="products__inner">
-                                    <img class="products__image" src="./images/pear-gorgonzola.jpg"
-                                        alt="Китайский яичный суп" width="512" height="512">
+                                    <img class="products__image" src="./images/popular/pear-gorgonzola.webp"
+                                        alt="Груша Горгонзола" width="512" height="512">
                                     <div class="products__icons">
                                         <svg class="products__icon" width="36" height="36" aria-hidden="true">
                                             <use xlink:href="images/sprite.svg#icon-vegetarian"></use>
@@ -237,14 +241,14 @@
                                 </div>
                             </article>
                         </a>
-                        <button class="product__btn btn">780 ₽</button>
+                        <button class="products__btn btn" type="button">780 ₽</button>
                     </li>
                     <li class="products__item">
                         <a class="products__link" href="#">
                             <article class="products__card">
                                 <div class="products__inner">
-                                    <img class="products__image" src="./images/pho-bo.jpg" alt="Китайский яичный суп"
-                                        width="512" height="512">
+                                    <img class="products__image" src="./images/menu/pho-bo.webp" alt="Фо Бо" width="512"
+                                        height="512">
                                     <div class="products__icons"></div>
                                 </div>
                                 <div class="products__info">
@@ -256,14 +260,14 @@
                                 </div>
                             </article>
                         </a>
-                        <button class="product__btn btn">490 ₽</button>
+                        <button class="products__btn btn" type="button">490 ₽</button>
                     </li>
                     <li class="products__item">
                         <a class="products__link" href="#">
                             <article class="products__card">
                                 <div class="products__inner">
-                                    <img class="products__image" src="./images/tom-yum.jpg" alt="Китайский яичный суп"
-                                        width="512" height="512">
+                                    <img class="products__image" src="./images/popular/tom-yum.webp"
+                                        alt="Том Ям с морепродуктами" width="512" height="512">
                                     <div class="products__icons">
                                         <svg class="products__icon" width="36" height="36" aria-hidden="true">
                                             <use xlink:href="images/sprite.svg#icon-sharp"></use>
@@ -282,7 +286,7 @@
                                 </div>
                             </article>
                         </a>
-                        <button class="product__btn btn">590 ₽</button>
+                        <button class="products__btn btn" type="button">590 ₽</button>
                     </li>
                 </ul>
             </div>
@@ -295,7 +299,7 @@
                         <li class="cards__item">
                             <a class="cards__link" href="#">
                                 <article class="cards__content">
-                                    <img class="cards__image" src="./images/platina.jpg" alt="статус Platina"
+                                    <img class="cards__image" src="./images/stock/platina.webp" alt="статус Platina"
                                         width="1600" height="2106">
                                     <div class="cards__badges">
                                         <div class="cards__badges-left">
@@ -312,7 +316,7 @@
                         <li class="cards__item">
                             <a class="cards__link" href="#">
                                 <article class="cards__content">
-                                    <img class="cards__image" src="./images/discount.jpg" alt="discount 5%" width="1600"
+                                    <img class="cards__image" src="./images/stock/discount.webp" alt="Скидка 5%" width="1600"
                                         height="1064">
                                     <div class="cards__badges">
                                         <div class="cards__badges-left">
@@ -338,7 +342,7 @@
                         <li class="cards__item">
                             <a class="cards__link" href="#">
                                 <article class="cards__content">
-                                    <img class="cards__image" src="./images/stand-up.jpg" alt="stand up" width="1600"
+                                    <img class="cards__image" src="./images/events/stand-up.webp" alt="Stand up" width="1600"
                                         height="1064">
                                     <div class="cards__badges">
                                         <div class="cards__badges-left">
@@ -356,7 +360,7 @@
                         <li class="cards__item">
                             <a class="cards__link" href="#">
                                 <article class="cards__content">
-                                    <img class="cards__image" src="./images/gastro-shop.jpg" alt="gastro shop"
+                                    <img class="cards__image" src="./images/events/gastro-shop.webp" alt="Гастроцех"
                                         width="1600" height="1064">
                                     <div class="cards__badges">
                                         <div class="cards__badges-left">
@@ -372,7 +376,7 @@
                             </a>
                         </li>
                     </ul>
-                    <button class="events__btn btn">Все события</button>
+                    <button class="events__btn btn" type="button">Все события</button>
                 </div>
             </div>
         </section>
@@ -384,8 +388,8 @@
                         <li class="cards__item">
                             <a class="cards__link" href="#">
                                 <article class="cards__content">
-                                    <img class="cards__image" src="./images/food-court.jpg" alt="food court" width="1600"
-                                        height="897">
+                                    <img class="cards__image" src="./images/about-us/food-court.webp" alt="Фудкорт"
+                                        width="1600" height="897">
                                     <div class="cards__badges">
                                         <div class="cards__badges-left">
                                             <span class="cards__badge">Открыт еще 1 ч 20 мин</span>
@@ -402,8 +406,8 @@
                         <li class="cards__item">
                             <a class="cards__link" href="#">
                                 <article class="cards__content">
-                                    <img class="cards__image" src="./images/gastro-shop-pizza.jpg" alt="gastro shop pizza"
-                                        width="1600" height="900">
+                                    <img class="cards__image" src="./images/about-us/gastro-shop-pizza.webp"
+                                        alt="Гастроцех пицца" width="1600" height="900">
                                     <div class="cards__badges">
                                         <div class="cards__badges-left">
                                             <span class="cards__badge">Открыт еще 1 ч 20 мин</span>

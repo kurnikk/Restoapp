@@ -59,7 +59,8 @@
     overflow: hidden;
 }
 
-.product__btn {
+.products__btn {
     padding: 16px 24px;
     border-radius: 16px;
+    font-weight: 600;
 }
