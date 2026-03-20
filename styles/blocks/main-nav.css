@@ -13,6 +13,7 @@
 .main-nav__link {
     font-weight: 600;
     color: #555555;
+    letter-spacing: 0.02em;
     transition: color 0.2s ease-in;
 }
 

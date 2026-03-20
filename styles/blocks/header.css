@@ -18,10 +18,10 @@
 
 .header__top-text {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 24px;
     color: #ffffff;
-    letter-spacing: 0.01em;
+    letter-spacing: -0.01em;
 }
 
 .header__top-btn {
@@ -65,10 +65,10 @@
 
 .header__tel {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     color: #555555;
     line-height: 24px;
-    letter-spacing: -0.01em;
+    letter-spacing: 0.02em;
     transition: color 0.2s ease-in;
 }
 
@@ -82,17 +82,17 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.01em;
 }
 
 .header__action {
     display: flex;
-    gap: 14px;
+    gap: 15px;
 }
 
 .header__action-btn {
     border-radius: 16px;
-    padding: 11px 15px;
+    padding: 10px 15px;
     border: 2px solid #1C1C1C;
     background-color: transparent;
     transition: background-color 0.2s ease-in;
