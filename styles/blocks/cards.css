@@ -1,0 +1,73 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(640px, 1fr));
+    gap: 32px;
+}
+
+.cards__content {
+    aspect-ratio: 16 / 9;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cards__content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.cards__badges {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    right: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards__badges-left {
+    display: flex;
+    gap: 5px;
+}
+
+.cards__badge {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    padding: 8px 8px 7px 10px;
+}
+
+.cards__badge--yellow {
+    background-color: #FEDD2C;
+    color: #1C1C1C;
+}
+
+.cards__badge--grey {
+    background-color: #727272;
+}
+
+.cards__name {
+    position: absolute;
+    left: 32px;
+    bottom: 32px;
+    right: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: #ffffff;
+    letter-spacing: 0.01em;
+}
