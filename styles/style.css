@@ -1,0 +1,19 @@
+/* Global */
+/* ------------------------------------ */
+
+@import "globals/normalize.css";
+@import "globals/fonts.css";
+@import "globals/reboot.css";
+@import "globals/container.css";
+@import "globals/visually-hidden.css";
+
+/* Blocks */
+/* ------------------------------------ */
+
+@import "blocks/btn.css";
+@import "blocks/header.css";
+@import "blocks/main-nav.css";
+@import "blocks/menu.css";
+@import "blocks/novelty.css";
+@import "blocks/products.css";
+@import "blocks/popular.css";

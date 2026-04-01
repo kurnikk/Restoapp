@@ -1,0 +1,13 @@
+.main-nav__list {
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+}
+
+.main-nav__link {
+    font-weight: 600;
+    color: #555555;
+}

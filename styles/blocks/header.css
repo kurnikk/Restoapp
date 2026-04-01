@@ -1,0 +1,84 @@
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__top {
+    background-color: #1C1C1C;
+    display: flex;
+    gap: 19px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+.header__top-text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.header__top-btn {
+    background-color: transparent;
+}
+
+.header__wrapper {
+    background: linear-gradient(90deg, #FEDD2C 0%, #F9C201 100%);
+    padding: 13px 0;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.header__logo-link {
+    display: flex;
+}
+
+.header__contacts {
+    display: flex;
+    gap: 64px;
+    align-items: center;
+}
+
+.header__contacts-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.header__tel {
+    font-weight: 600;
+    font-size: 20px;
+    color: #555555;
+}
+
+.header__accepting-orders {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.header__action {
+    display: flex;
+    gap: 11px;
+}
+
+.header__action-btn {
+    border-radius: 16px;
+    padding: 12px 16px;
+    border: 2px solid #1C1C1C;
+    background-color: transparent;
+}
+
+.header__action-btn--basket {
+    background-color: #1C1C1C;
+}
+
+.header__action-btn--basket .header__action-icon {
+    color: #ffffff;
+}
