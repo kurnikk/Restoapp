@@ -1,0 +1,224 @@
+.footer {
+    background-color: #1C1C1C;
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 25px 0 32px;
+}
+
+.footer__contacts {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__contacts-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.footer__tel {
+    font-weight: 600;
+    font-size: 24px;
+    color: #F4F4F4;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+    transition: color 0.2s ease-in;
+}
+
+.footer__tel:hover,
+.footer__tel:focus-visible {
+    color: #A6A6A6;
+    outline: none;
+}
+
+.footer__accepting-orders {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #A6A6A6;
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.footer__social {
+    min-width: 40px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #393939;
+    border-radius: 8px;
+}
+
+.footer__social:focus-visible {
+    outline: none;
+}
+
+.footer__social:hover .footer__social-icon,
+.footer__social:focus-visible .footer__social-icon {
+    color: #FFFFFF;
+}
+
+.footer__social-icon {
+    color: #A6A6A6;
+    transition: color 0.2s ease-in;
+}
+
+.footer__nav {
+    display: grid;
+    grid-template-columns: 284px 1fr 284px;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer__nav-list {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__nav-link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F4F4F4;
+    letter-spacing: 0.03em;
+    transition: color 0.2s ease-in;
+}
+
+.footer__nav-link:hover,
+.footer__nav-link:focus-visible {
+    color: #A6A6A6;
+    outline: none;
+}
+
+.footer__download {
+    display: flex;
+    gap: 8px;
+}
+
+.footer__download-link:focus-visible {
+    outline: none;
+}
+
+.footer__download-link:hover .footer__download-icon,
+.footer__download-link:focus-visible .footer__download-icon {
+    color: #FFFFFF;
+}
+
+.footer__download-link:hover .footer__download-icon path,
+.footer__download-link:focus-visible .footer__download-icon path {
+    fill-opacity: 1;
+}
+
+.footer__download-icon {
+    color: #A6A6A6;
+    transition: color 0.2s ease-in;
+}
+
+.footer__download-icon path {
+    transition: fill-opacity 0.2s ease-in;
+}
+
+.footer__info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__copyright {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #A6A6A6;
+    letter-spacing: 0.02em;
+}
+
+.footer__legal {
+    display: flex;
+    gap: 16px;
+}
+
+.footer__legal-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #A6A6A6;
+    letter-spacing: 0.02em;
+    transition: color 0.2s ease-in;
+}
+
+.footer__legal-link:hover,
+.footer__legal-link:focus-visible {
+    color: #FFFFFF;
+    outline: none;
+}
+
+.footer__payments {
+    display: flex;
+    gap: 8px;
+}
+
+.footer__payments-link {
+    min-width: 48px;
+    min-height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #393939;
+}
+
+.footer__payments-icon {
+    color: #A6A6A6;
+}
+
+.footer__credit {
+    padding: 30px;
+    border-top: 1px solid #393939;
+    display: block;
+    text-align: center;
+}
+
+.footer__credit-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #A6A6A6;
+    letter-spacing: 0.03em;
+}
+
+.footer__credit-link {
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #A6A6A6;
+    letter-spacing: 0.03em;
+    transition: color 0.2s ease-in;
+}
+
+.footer__credit-link:hover,
+.footer__credit-link:focus-visible {
+    color: #FFFFFF;
+    outline: none;
+}

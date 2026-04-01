@@ -5,19 +5,23 @@
 
 .header__top {
     background-color: #1C1C1C;
-    display: flex;
+    display: none;
     gap: 19px;
     align-items: center;
     justify-content: center;
     padding: 12px;
 }
 
+.header__top--is-visible {
+    display: flex;
+}
+
 .header__top-text {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 24px;
     color: #ffffff;
-    letter-spacing: 0.01em;
+    letter-spacing: -0.01em;
 }
 
 .header__top-btn {
@@ -61,35 +65,71 @@
 
 .header__tel {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     color: #555555;
     line-height: 24px;
-    letter-spacing: -0.01em;
+    letter-spacing: 0.02em;
+    transition: color 0.2s ease-in;
+}
+
+.header__tel:hover,
+.header__tel:focus-visible {
+    color: #1C1C1C;
+    outline: none;
 }
 
 .header__accepting-orders {
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.01em;
 }
 
 .header__action {
     display: flex;
-    gap: 14px;
+    gap: 15px;
 }
 
 .header__action-btn {
     border-radius: 16px;
-    padding: 11px 15px;
+    padding: 10px 15px;
     border: 2px solid #1C1C1C;
     background-color: transparent;
+    transition: background-color 0.2s ease-in;
+}
+
+.header__action-btn:hover,
+.header__action-btn:focus-visible {
+    background-color: #1C1C1C;
+    outline: none;
+}
+
+.header__action-btn:hover .header__action-icon,
+.header__action-btn:focus-visible .header__action-icon {
+    color: #ffffff;
 }
 
 .header__action-btn--basket {
     background-color: #1C1C1C;
+    transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
+}
+
+.header__action-btn--basket:hover,
+.header__action-btn--basket:focus-visible {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
 }
 
 .header__action-btn--basket .header__action-icon {
     color: #ffffff;
+}
+
+.header__action-btn--basket:hover .header__action-icon,
+.header__action-btn--basket:focus-visible .header__action-icon {
+    color: #1C1C1C;
+}
+
+.header__action-icon {
+    color: #1C1C1C;
+    transition: color 0.2s ease-in;
 }
